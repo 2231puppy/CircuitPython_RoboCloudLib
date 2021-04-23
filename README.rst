@@ -39,8 +39,24 @@ or individual libraries can be installed using
 Usage Example
 =============
 
-.. todo:: Add a quick, simple example. It and other examples should live in the
-examples folder and be included in docs/examples.rst.
+.. code-block:: python
+
+	# Imports
+	import board
+	import digitalio
+	import robocloudlib
+
+	# Pass the digitalio and board instances so the class can control pins.
+	motors = robocloudlib.Motors(digitalio, board)
+
+	# Motor 1 FWD, Motor 2 OFF
+	motors.set_speeds(1, 0)
+
+	# Motor 1 OFF, Motor 2 BACKWD
+	motors.set_speeds(0, -1)
+
+	#Motor 1 OFF, Motor 2 OFF
+	motors.set_speeds(0, 0)
 
 Contributing
 ============
