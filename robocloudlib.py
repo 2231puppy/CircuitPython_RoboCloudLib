@@ -24,7 +24,7 @@ RoboCloud
   https://github.com/adafruit/circuitpython/releases
 """
 
-__version__ = "0.0.0-auto.0"
+__version__ = "0.0.1"
 __repo__ = "https://github.com/2231puppy/Projectstida_CircuitPython_robocloud.git"
 
 
